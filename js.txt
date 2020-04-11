@@ -1,0 +1,139 @@
+--------js-----
+5 variables primitive type
+typeof
+1)number (all )
+2)string both "",''     concadination +, no -ve index
+a.length
+'sunil'[0]
+
+
+3)boolean
+4)undefined
+5)null
+
+variable diclaration
+var x=1;
+commanly used methods are 3
+1)alert
+2)cosole.log()
+3)prompt()
+
+AITHMETIC OPERATOR
++,-,/,%,**
+comparision OPERATOR
+>,<,>=,<=,==,!=,===,!==
+
+10=='10' true
+
+null
+undefined
+NaN 
+
+LOGICAL OPERATORS
+&&
+||
+!
+
+true=='2' =>false
+true&&2 =>true
+2&&2 =>2
+
+CONDITIONAL STATMENT
+ITERATIVE STATMENT
+FUNCTIONS
+ARRAYS
+OBJECTS
+
+conditional STATMENT
+
+if(){}
+else if(){}
+else{}
+
+loops
+while
+for
+for-of
+for-in
+forEach()
+
+var i=5;
+while(i<100){
+    if(i%3==0 && i%5==0){
+        console.log(i);
+    }
+    i++
+}
+
+for(var i=0;i<10;i++){
+    console.log(i);
+}
+
+function print(name){
+    alert("hi\n"+name+"\nwelcome to home");
+
+}
+var name=prompt("enter your name")
+print(name)
+
+function capitalize(name){
+    return name[0].toUpperCase()+name.slice(1);
+}
+console.log(capitalize('aunil'))
+
+
+
+function factorial(n){
+    var b=n-1
+    var a=n
+    for(var b=n-1;b>0;b--){
+        a=a*b;
+    }
+    return a
+}
+console.log(factorial(5))
+
+
+
+
+function convertingSnakeToKabab(n){
+    var newn='';
+    for(var i=0;i<n.length;i++){
+        if(n[i]=='_'){
+            newn=newn+'-';
+        }
+        else if(i<n.length){
+            newn=newn+n[i]
+        }
+    }
+    return newn
+}
+var n="hi_sunil_welcome";
+console.log(convertingSnakeToKabab(n));
+
+
+javascript scopes:
+1)global scope
+2)local scope
+
+higher order FUNCTIONS
+f1(f2){}
+f1(){
+    return f2();
+}
+
+eg: setInterval(function1,3000)
+
+anonymous function
+function(){}
+eg::: setInterval(function(){console.log("hiii"),3000})
+
+
+eg
+function isSleeping(weekdays,vacation){
+    return !weekdays||vacation;
+}
+console.log("the person Sleeping"+isSleeping(true,false))
+
+
+
