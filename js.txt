@@ -136,4 +136,222 @@ function isSleeping(weekdays,vacation){
 console.log("the person Sleeping"+isSleeping(true,false))
 
 
+arrays
+a=["s","u","n","i","l"]
+a[1]="l"
+a[5]="l"
+can holds hetrogenious
+var data=[];
+var data=new Array()
 
+6methods in arrays:
+push() last element
+pop()   last element
+unshift()   push() first element
+shift()     pop() first element
+slice()
+splice(index,noelements)
+indexOf()
+
+nested arrays:
+
+a=[[10,20,30],[2,3,4],[-1,-2,-3]]
+a[0][0]==10
+-------------------------------------------------------------------------------
+var input=prompt("enter which operation you want to perform add,list,exit")
+books=[]
+while(input!="exit"){
+    if(input=="add"){
+        var book=prompt("enter book name");
+        books.push(book);
+    }
+    else if(input=="list"){
+        console.log(books)
+    }
+    else{
+        console.log("please enter a valide option");
+    
+    }
+    var input=prompt("enter which operation you want to perform add,list,exit");
+}
+exit()
+------------------------------------------------------------------------------------
+var list=[1,2,3,4]
+for(q of list){
+    console.log(q)
+}
+-------------------------------------------------------------------------------
+var data=[2,3,4,5,6]
+data.forEach(function (x){console.log(x*x);});
+-----------------------------------------------------------------
+function sameElements(n){
+    var list=[];i=1;b=0;
+    while(i<n.length){
+     if(n[b]<=n[i]){
+         list.push(n[i]);
+     }
+     b=i;
+     i++;
+}
+console.log(list.length);
+if(list.length==1){
+    console.log(list)
+}
+else{
+    console.log("no")
+}
+}
+sameElements([1,1,1,1,2,222])
+
+
+----------------------------------------------------------
+function add(n){
+    var list=[];i=0;
+    var sum=null;
+    while(i<n.length){
+        sum=sum+n[i]
+        i++;
+     }
+    return console.log(sum);
+}
+
+add([1,1,1,1,2])
+---------------------------------------------------------
+function reverseArray(data){
+    for(var i=data.length-1;i>=0;i--){
+        console.log(data[i])
+    }
+}
+reverseArray([1,2,3,4])
+----------------------------------------------------------------
+function identical(data){
+    var first=data[0];
+    for(var i=0;i<data.length;i++){
+        if(data[i]!=first){
+            return false;
+        }
+    }
+    return true;
+}
+console.log(identical([1,1,1,1]))
+--------------------------------------------------------------------
+function maaxNumber(data){
+    var first=data[0]
+    for(var i=1;i<data.length;i++){
+        if(data[i]>first){
+            first=data[i];
+        }
+    }
+    return first;
+}
+console.log(maaxNumber([1,3,88,6,0,100]))
+-------------------------------------------------------------------
+function booksModification(){
+    var data=[];
+    var input=prompt('enter you whant to do exit,add,list,delete');
+    while(input!='exit'){
+        if(input=='add'){
+            add();
+        }
+        else if(input=='list'){
+            list();
+        }
+        else if(input=='delete'){
+            deletit();
+        }
+        else{
+            console.log("please enter valid option");
+        }
+        input=prompt('enter you whant to do exit,add,list,delete');
+    }
+function add(){
+    var name=prompt("enter book");
+    data.push(name);
+}
+function list(){
+    for(book of data){
+        console.log(book);
+    }
+}
+function deletit(){
+    var name=prompt("enter book name");
+    var bookIndex=data.indexOf(name);
+    console.log(bookIndex)
+    if(bookIndex==-1){
+        console.log("please valid name");
+    }
+     else   {
+        data.splice(bookIndex,1);
+        list();}
+    }
+}
+booksModification()
+------------------------------------------------------------------------
+object:
+data={name:"ss",no:1,rank:22}
+object contain methods:
+data={"name":"ss","no":1,"rank":22,m:function (){cosole.log("hello"+this.name);}}
+data.m()
+-----------------------------------------------------------------------
+data={"name":"ss","no":1,"rank":22,m:function (){cosole.log("hello");}}
+ -------------------------------------------------------------------
+ var data=[{name:"bhaubali",iswatched:true,hit:true},{name:"hit",iswatched:false,hit:true}
+,{name:"hellobaby",iswatched:true,hit:false},{name:"spider",iswatched:true,hit:false}]
+data.forEach(function(movie){
+    var result=''
+    if(movie.iswatched==true){
+        result=result+" i watched movie "+movie.name
+    }
+    else 
+    {
+        result=result+"not watched yet";
+    }
+    if(movie.hit==true){
+        result=result+"\s and movie is hit"
+    }
+    else{
+        result=result+"\s movie is flop"
+    }
+    return console.log(result)
+})
+-----------------------------------------------------------------------------
+DOM
+important attributes
+document.URL
+document.head
+document.body
+document.links
+
+important dom methods
+document.getElementById()
+document.getElementTagName()
+document.getElementClassName()
+document.querySelector()
+document.querySelectorAll()
+-----------------------------------------------------
+in methods
+having two element with same id
+you can access
+var x=document.getElementByTagName("li")==>[1,2]
+x[0]
+document.querySelector("#first")=>id
+var x=document.querySelecorAll(".room")=>class
+for (q in x){
+    ==========
+}
+-----------------------------------------------------------
+var h1=document.querySelector('h1');
+h1.textContent="hell"
+h1.innerHTML="<a href="ddd.com">click here</a>"
+ eg;<a href="ww.fb.com">login</a>
+ var a1=document.querySelector("a")
+ a1.getAttribute("href")
+ a1.setAttribute("hrf","ww.youtube.com")
+
+ var a=document.querySelectorAll('a');
+ for(q of a){
+     q.style.color="red";
+ }
+
+ ----------------------------------------------------------------------------
+ jQuery
