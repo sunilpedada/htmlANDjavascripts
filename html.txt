@@ -1,0 +1,59 @@
+
+https://medium.com/@apogiatzis/create-a-restful-api-with-users-and-jwt-authentication-using-django-1-11-drf-part-1-288268602bb7
+
+
+https://stackoverflow.com/questions/49431528/how-can-i-use-set-password-in-custom-non-admin-model
+
+codingbat.com
+
+mdn
+
+https://in.pinterest.com/pin/554435404109781954/
+https://in.pinterest.com/pin/341218109257237097/
+
+
+unsplah.com
+
+https://www.programiz.com/python-programming/modules
+
+
+
+
+<b>
+<strong>
+-----
+<i>
+<em>
+-----
+<ul>
+<ol>
+-----
+<img scr=".jpg" alt="" hight="300" width="200">
+<a href="" >click<a>
+<link rel="stylesheet" href=""/>
+<span></span>
+------
+<forms action="zzz.html" method="post">
+<input type="text" name="" value="">
+</forms>
+text,password,email,color,submit,checkbox,radio
+----------
+<label for="name">Name:</label>
+<input type="text" id="name" value="name" placeholder="enter your name" required>
+------------
+<label for ="yes">yes</lebel>
+<input type="radio" id="yes" name="marrage" value="yes" >
+<label for="no">no</label>
+<input type="radio" id="no" name="marrage" value="no">
+------------
+dropbox,select box
+<select name="trf">
+    <option value="banking">banking</option>
+    <option value="card">card</option>
+    </select>
+<select name="trf" multiple>
+--------------
+select language:
+<input name="en" typ"checkbox" value="eg">eng
+-------------
+<textarea name="feedback" rows="8" cols="90"></textarea> 

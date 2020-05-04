@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("img1.jpg");
+    background-size: cover;
+    font-family:sans-serif;
+
+}
+.nav{
+    background-color: rgb(31, 25, 29);
+    text-align: center;
+    color: lightgrey;
+}
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+.nav ul li{
+    width: 100px;
+    padding: 15px;
+    margin: 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: lightgrey;
+
+}
+.active,.nav ul li:hover
+{
+    background:#403b2a;
+    border-radius: 3px;
+}
+.nav .fa{
+    margin-right: 8px;
+}
